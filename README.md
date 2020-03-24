@@ -8,13 +8,12 @@ Uses the standard Shannon Entropy formula.
 Allows you to specify which variable in a dataset is to be the parent node, and then calculates the entropy of all other variables WRT that parent node.
 
 ## Installation
-library(devtools)
-devtools::install_github('scottroot/shannon-entropy')
+* library(devtools)
+* devtools::install_github('scottroot/shannon-entropy')
 
 ## Usage
-library(shannon-entropy)
-
-ig(root, df, ignore)
+* library(shannon-entropy)
+* ig(root, df, ignore)
 
 ## Arguments
 **root**      The parent root variable.
