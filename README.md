@@ -16,11 +16,11 @@ Allows you to specify which variable in a dataset is to be the parent node, and 
 * ig(root, df, ignore)
 
 ## Arguments
-**root**      The parent root variable.
+* **root**      The parent root variable.
 
-**df**        Your dataset or dataframe.
+* **df**        Your dataset or dataframe.
 
-**ignore**    The variables or columns in your dataset that you don't want to include
+* **ignore**    The variables or columns in your dataset that you don't want to include
 
 
 ## Output
