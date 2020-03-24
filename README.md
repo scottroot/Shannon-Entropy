@@ -10,11 +10,13 @@ library(shannon-entropy)
 
 ig(root, df, ignore)
 
-root    The parent root variable.
+## Arguments
+#### root    The parent root variable.
 
-df      Your dataset or dataframe.
+#### df      Your dataset or dataframe.
 
-ignore  The variables or columns in your dataset that you don't want to include
+#### ignore  The variables or columns in your dataset that you don't want to include
 
 
-Output is a dataframe with all the variables' entropy and information gain.
+## Output
+A dataframe with all the variables' entropy and information gain.
