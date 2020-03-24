@@ -7,10 +7,14 @@ devtools::install_github('scottroot/shannon-entropy')
 
 ## Usage
 library(shannon-entropy)
+
 ig(root, df, ignore)
 
 root    The parent root variable.
+
 df      Your dataset or dataframe.
+
 ignore  The variables or columns in your dataset that you don't want to include
+
 
 Output is a dataframe with all the variables' entropy and information gain.
