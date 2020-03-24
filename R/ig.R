@@ -1,3 +1,24 @@
+#' Entropy and Information Gain
+#'
+#' \code{library(shannon.entrpoy)}
+#' \code{ig()} returns the entropy and information gains of all the variables present in your dataset.
+#'
+#' @details
+#' Important note: if you have continuous variables, be sure to handle that separately or else you will get useless results.
+#' Recommended to split or cut your continuous variables into bins
+#'
+#' @param root The parent root variable.
+#' @param df Your dataset or dataframe.
+#' @param ignore The variables or columns in your dataset that you don't want to include
+#' @return Output is a dataframe with all the variables' entropy and information gain.
+#'
+#' @examples
+#' ig(root='purchase', df=myData, ignore=c('id','name'))
+#' ig(root='credit', df=salesdata, ignore='age')
+#'
+
+
+
 ig <- function(root, df, ignore){
   library(entropy)
 
@@ -44,6 +65,3 @@ ig <- function(root, df, ignore){
   results.sort <- data.frame(do.call(cbind, lapply( results[order(results$info_gain),] , rev)))
   return(results.sort)
 }
-
-
-# ig(root = "pep", df = bank, ignore = c("id"))
