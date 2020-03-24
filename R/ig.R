@@ -1,6 +1,7 @@
 #' Entropy and Information Gain
 #'
-#' \code{library(shannon.entrpoy)}
+#' \code{library(shannon.entropy)}
+#'
 #' \code{ig()} returns the entropy and information gains of all the variables present in your dataset.
 #'
 #' @details
